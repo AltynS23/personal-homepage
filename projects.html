@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills & Projects | Altyn</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container nav-bar">
+      <a href="index.html" class="brand">Altyn's Growth Log</a>
+      <nav>
+        <a href="index.html">About Me</a>
+        <a href="learning.html">Learning Record</a>
+        <a href="projects.html" class="active">Skills & Projects</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h1>Skill Demonstration</h1>
+      <p>Instead of listing buzzwords, here are the specific skills I am actively using in my coursework along with real examples from my lab work.</p>
+
+      <div class="skill-box">
+        <h3>C Programming (Lab Exercises & Debugging)</h3>
+        <p><strong>What I did with it:</strong> Wrote and fixed weekly lab programs involving loops, arrays, and basic calculations.</p>
+        <p><strong>Evidence (Code Snippet from Lab Practice — replace with your actual lab code/screenshot):</strong></p>
+        <pre><code>#include &lt;stdio.h&gt;
+
+int main() {
+    int n, i;
+    float sum = 0.0, score;
+
+    printf("Enter number of subjects: ");
+    scanf("%d", &n);
+
+    for (i = 1; i &lt;= n; i++) {
+        printf("Enter score %d: ", i);
+        scanf("%f", &score);
+        sum += score;
+    }
+
+    if (n &gt; 0) {
+        printf("Average score: %.2f\n", sum / n);
+    }
+    return 0;
+}</code></pre>
+      </div>
+
+      <div class="skill-box">
+        <h3>Web Basics (HTML, CSS, JavaScript)</h3>
+        <p><strong>What I did with it:</strong> Built this multi-page personal growth website with page navigation, topic filtering, and an interactive feedback form.</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h1>Course Project / Lab Work</h1>
+      <h2>Weekly C Lab Mini-Project: Student Score & Exercise Analyzer</h2>
+      <ul class="clean-list">
+        <li><strong>Problem to solve:</strong> Calculating averages and checking pass/fail conditions for multiple course scores quickly without manual errors.</li>
+        <li><strong>My responsibility:</strong> Writing the input/output logic, testing edge cases (such as zero inputs), and fixing compilation bugs during the lab session.</li>
+        <li><strong>Technology used:</strong> C Language (GCC Compiler / Code Editor).</li>
+        <li><strong>Biggest difficulty:</strong> Handling loop boundaries properly and making sure variable types (int vs. float) didn't truncate decimal results.</li>
+      </ul>
+      <p class="note"><em>Note: After our physics class, replace the details above with the exact C lab file from Altyn's laptop and add a screenshot image if desired.</em></p>
+    </section>
+
+    <section class="card">
+      <h2>Leave a Study Note or Feedback</h2>
+      <p>Have a suggestion for my learning log or want to share a resource? Leave a quick message below:</p>
+      <form id="feedbackForm" class="contact-form">
+        <label for="visitorName">Your Name</label>
+        <input type="text" id="visitorName" placeholder="e.g., Classmate or Friend" required>
+
+        <label for="visitorTopic">Topic</label>
+        <select id="visitorTopic">
+          <option value="C Programming">C Programming</option>
+          <option value="Calculus & Physics">Calculus & Physics</option>
+          <option value="Website Feedback">Website Feedback</option>
+        </select>
+
+        <label for="visitorMessage">Message</label>
+        <textarea id="visitorMessage" rows="3" placeholder="Write a short note..." required></textarea>
+
+        <button type="submit" class="btn-primary">Post Note</button>
+      </form>
+      <div id="feedbackOutput" class="feedback-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Altyn — Personal Growth & Learning Homepage | Updated 2026</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

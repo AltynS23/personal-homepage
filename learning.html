@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning Record | Altyn</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container nav-bar">
+      <a href="index.html" class="brand">Altyn's Growth Log</a>
+      <nav>
+        <a href="index.html">About Me</a>
+        <a href="learning.html" class="active">Learning Record</a>
+        <a href="projects.html">Skills & Projects</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h1>Personal Learning Record</h1>
+      <p>A log of key subjects I have been studying since starting my degree, including the difficulties I faced and how I worked through them.</p>
+      
+      <div class="filter-bar">
+        <span>Filter by topic:</span>
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="programming">Programming</button>
+        <button class="filter-btn" data-filter="math-science">Math & Physics</button>
+      </div>
+    </section>
+
+    <div class="record-list">
+      <article class="card record-item" data-category="programming">
+        <div class="record-header">
+          <h2>1. Weekly C Programming Labs & Debugging</h2>
+          <span class="date-tag">Fall 2025 – Present</span>
+        </div>
+        <p><strong>What I learned:</strong> Basic C syntax, variables, loops, conditional statements, functions, and how to trace errors in small console programs.</p>
+        <p><strong>Problem encountered:</strong> At first, syntax errors, missing semicolons, and understanding why a loop produced the wrong output made debugging slow and frustrating.</p>
+        <p><strong>How it was solved:</strong> Practicing every week during lab sessions, breaking small tasks into steps, and testing outputs line by line. I am still improving my ability to write cleaner logic independently without relying too much on hints.</p>
+      </article>
+
+      <article class="card record-item" data-category="math-science">
+        <div class="record-header">
+          <h2>2. Calculus & College Physics Adaptation</h2>
+          <span class="date-tag">2025 – 2026</span>
+        </div>
+        <p><strong>What I learned:</strong> Core limits, derivatives, and foundational physics formulas required for first-year engineering coursework.</p>
+        <p><strong>Problem encountered:</strong> Transitioning into university-level Calculus and Physics in an international environment was challenging at the start, especially keeping up with new terminology and problem-solving speed.</p>
+        <p><strong>How it was solved:</strong> Studying regularly with friends, solving extra practice exercises, memorizing key formulas, and watching supplementary explanation videos in Russian to reinforce difficult concepts.</p>
+      </article>
+
+      <article class="card record-item" data-category="math-science">
+        <div class="record-header">
+          <h2>3. Linear Algebra Foundations</h2>
+          <span class="date-tag">2026</span>
+        </div>
+        <p><strong>What I learned:</strong> Matrix operations, systems of linear equations, determinants, and vector basics.</p>
+        <p><strong>Problem encountered:</strong> Multi-step matrix calculations often led to small arithmetic mistakes that ruined the final answer.</p>
+        <p><strong>How it was solved:</strong> Writing out intermediate steps neatly instead of skipping lines, double-checking row operations, and reviewing solutions with classmates.</p>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Altyn — Personal Growth & Learning Homepage | Updated 2026</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
